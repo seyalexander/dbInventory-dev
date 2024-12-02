@@ -1,5 +1,6 @@
 section {
   padding: 0 4.5rem;
+  position: relative;
 }
 
 section header{
@@ -133,14 +134,14 @@ main table {
 
 main table thead {
   background-color: var(--color-principal-4);
-  height: 2rem;
-
 }
 
 main table thead  tr {
   width: 100%;
+  height: 3rem;
   display: flex;
   align-items: center;
+  justify-content: center;
   color: var(--color-principal-1);
 }
 
@@ -278,15 +279,6 @@ main table tbody tr td .ver_detalle:hover {
   font-size: .8rem;
 }
 
-
-
-
-
-
-
-
-
-
 .container-space-y-2 {
   display: flex;
   flex-direction: column;
@@ -372,14 +364,6 @@ main table tbody tr td .ver_detalle:hover {
 
 
 
-
-
-
-
-
-
-
-
 .container_seleccion_archivo button {
   background-color: var(--color-principal-3);
   color: #fff;
@@ -453,3 +437,130 @@ main table tbody tr td .ver_detalle:hover {
   background-color: var(--color-principal-3);
   color: #fff;
 }
+
+
+
+@media (max-width: 480px) {
+  section {
+    padding: 0 1rem;
+  }
+
+
+  section header .container_status .tarjet_principal {
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  section header .container_status .tarjet_principal  .tarjet_detalle_izquierda {
+    padding: 1rem;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+
+  section header .container_status .tarjet_principal  .tarjet_detalle_derecha {
+    display: none;
+  }
+
+  main .header_title_table .header_container_buttons {
+    margin-top: 1rem;
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  main .header_title_table .header_container_buttons button {
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem .5rem;
+    box-sizing: border-box;
+    gap: .5rem;
+    align-items: center;
+    text-wrap: wrap;
+  }
+
+  main .header_title_table .header_container_buttons button i {
+    display: none;
+  }
+
+  .body_table_data {
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  main table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: visible;
+  }
+
+
+  main table thead  tr th:first-child,
+main table tbody tr td:first-child {
+  min-width: 10rem;
+}
+
+main table thead  tr th:nth-child(2),
+main table tbody tr td:nth-child(2) {
+  min-width: 15rem;
+}
+
+main table thead  tr th:nth-child(3),
+main table tbody tr td:nth-child(3) {
+  min-width: 8rem;
+}
+
+main table thead  tr th:nth-child(4),
+main table tbody tr td:nth-child(4) {
+  min-width: 5rem;
+}
+
+main table thead  tr th:nth-child(5),
+main table tbody tr td:nth-child(5) {
+  min-width: 5rem;
+}
+
+
+/* MODAL CARGA DATOS */
+
+.container_seleccion_archivo {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container-space-y-2 {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  flex-direction: column;
+  gap: 0.5rem;
+  background-color: #F0F0F0;
+  border-radius: 5px;
+  margin: 1rem 0;
+}
+
+}
+
+/* Teléfonos grandes y tablets pequeños */
+/* @media (min-width: 481px) and (max-width: 768px) {
+  body {
+    font-size: 15px;
+  }
+} */
+
+/* Tablets y dispositivos medianos */
+/* @media (min-width: 769px) and (max-width: 1024px) {
+  body {
+    font-size: 16px;
+    padding: 20px;
+  }
+} */
+
+/* Computadoras de escritorio pequeñas */
+/* @media (min-width: 1025px) and (max-width: 1440px) {
+  body {
+    font-size: 18px;
+    padding: 30px;
+  }
+} */

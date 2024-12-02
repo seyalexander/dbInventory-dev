@@ -9,14 +9,22 @@
   font-weight: bold;
   font-size: 1.5rem;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   color: var(--color-principal-3);
 }
 
 ul {
-  padding: 2rem 4.5rem;
   display: flex;
   gap: 1rem;
   justify-content: center;
+  flex-wrap: wrap;
+}
+
+container_opciones ul li {
+  flex: .5;
+  width: 100%;
+  min-width: 10rem;
+  max-width: 100%;
 }
 
 .item_container {
