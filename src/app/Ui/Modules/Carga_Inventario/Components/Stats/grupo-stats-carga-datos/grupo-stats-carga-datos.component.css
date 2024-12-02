@@ -1,0 +1,5 @@
+.container_status {
+  display: flex;
+  gap: .6rem;
+  flex-wrap: wrap;
+}
