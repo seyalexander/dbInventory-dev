@@ -4,6 +4,7 @@ import { TableCargaDatosComponent } from '../../Components/Tables/table-carga-da
 import { ModalCargaDatosComponent } from '../../Components/Modals/modal-carga-datos/modal-carga-datos.component';
 import { GrupoStatsCargaDatosComponent } from '../../Components/Stats/grupo-stats-carga-datos/grupo-stats-carga-datos.component';
 import { GrupoButtonsHeaderCargaDatosComponent } from '../../Components/Buttons/grupo-buttons-header-carga-datos/grupo-buttons-header-carga-datos.component';
+import { TableDesignOneComponent } from '../../Components/Tables/table-design-one/table-design-one.component';
 
 @Component({
   selector: 'carga-inventario-page',
@@ -13,6 +14,7 @@ import { GrupoButtonsHeaderCargaDatosComponent } from '../../Components/Buttons/
     GrupoStatsCargaDatosComponent,
     GrupoButtonsHeaderCargaDatosComponent,
     TableCargaDatosComponent,
+    TableDesignOneComponent,
     ModalCargaDatosComponent
   ],
   templateUrl: './carga-inventario-page.component.html',

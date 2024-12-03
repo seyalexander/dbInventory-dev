@@ -1,9 +1,11 @@
 section {
-  padding: 0 4.5rem;
   position: relative;
 }
 
 section header{
+  width: 100%;
+  padding: 0 4.5rem;
+  box-sizing: border-box;
   display: flex;
   justify-content: space-between;
   align-items: center;

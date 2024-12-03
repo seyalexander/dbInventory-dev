@@ -33,27 +33,27 @@ export class MenuOpcionesComponent {
       {
         name: 'Cargar Inventario',
         icon: 'uil uil-estate',
-        route: ['/','Cargar_inventario'],
+        route: ['/','dashboard','Cargar_inventario'],
       },
       {
         name: 'Administrar',
         icon: 'uil uil-estate',
-        route: ['/','Cargar_inventario'],
+        route: ['/','dashboard','Cargar_inventario'],
       },
       {
         name: 'Asignar',
         icon: 'uil uil-estate',
-        route: ['/','Cargar_inventario'],
+        route: ['/','dashboard','Cargar_inventario'],
       },
       {
         name: 'Consultar',
         icon: 'uil uil-estate',
-        route: ['/','Cargar_inventario'],
+        route: ['/','dashboard','Cargar_inventario'],
       },
       {
         name: 'Ajustes',
         icon: 'uil uil-estate',
-        route: ['/','Cargar_inventario'],
+        route: ['/','dashboard','Cargar_inventario'],
       },
     ]
 

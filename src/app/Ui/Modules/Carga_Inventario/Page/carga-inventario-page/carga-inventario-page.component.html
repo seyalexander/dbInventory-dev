@@ -1,19 +1,12 @@
 <section>
   <header>
-    <a [routerLink]="'/'"><i class="uil uil-angle-left"></i> Volver</a>
+    <a [routerLink]="'/dashboard'"><i class="uil uil-angle-left"></i> Volver</a>
     <grupo-stats-carga-datos />
   </header>
   <main>
-    <div class="header_title_table">
-      <div class="header_title_details">
-        <h3>Excels</h3>
-        <p>Listado de Excel cargados para inventariar</p>
-      </div>
-      <grupo-buttons-header-carga-datos />
-    </div>
-    <div class="body_table_data">
-      <app-table-carga-datos />
-    </div>
+
+    <table-design-one />
+
   </main>
 </section>
 
