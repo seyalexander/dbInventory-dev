@@ -53,7 +53,7 @@ export class MenuOpcionesComponent {
       {
         name: 'Ajustes',
         icon: 'uil uil-estate',
-        route: ['/','dashboard','Cargar_inventario'],
+        route: ['/','dashboard','configuracion'],
       },
     ]
 

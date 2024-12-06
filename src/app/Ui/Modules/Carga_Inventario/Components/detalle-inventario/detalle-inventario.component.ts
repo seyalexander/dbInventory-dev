@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { inventariosModel } from '../../../../../Domain/models/inventarios/inventarios.models';
+import { detalleCarga } from '../../../../../Domain/models/cargaDatos/cargaDatos.model';
 
 @Component({
   selector: 'detalle-inventario',
@@ -8,5 +10,7 @@ import { Component } from '@angular/core';
   styleUrl: './detalle-inventario.component.css'
 })
 export class DetalleInventarioComponent {
+  @Input() citaSeleccionada: inventariosModel = {} as inventariosModel;
+  @Input() detalleProductos: Array<detalleCarga> = []
 
 }

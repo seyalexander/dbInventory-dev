@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { StatsCargaDatosComponent } from '../stats-carga-datos/stats-carga-datos.component';
 
 @Component({
@@ -9,5 +9,8 @@ import { StatsCargaDatosComponent } from '../stats-carga-datos/stats-carga-datos
   styleUrl: './grupo-stats-carga-datos.component.css'
 })
 export class GrupoStatsCargaDatosComponent {
-
+  @Input() ValorInventariosCreados: number = 0
+  @Input() ValorInventariosAsignados: number = 0
+  @Input() ValorInventariosActivos: number = 0
+  @Input() ValorInventariosPorEmpresa: number = 0
 }

@@ -3,6 +3,7 @@ import { CargaInventarioPageComponent } from './Ui/Modules/Carga_Inventario/Page
 import { DashboardPageComponent } from './Ui/Modules/Dashboard/Page/dashboard-page/dashboard-page.component';
 import { MenuOpcionesComponent } from './Ui/Modules/Dashboard/Components/menu-opciones/menu-opciones.component';
 import { LoginPageComponent } from './Ui/Modules/login/page/login-page/login-page.component';
+import { EmpresaPageComponent } from './Ui/Modules/configuration/Empresas/page/empresa-page/empresa-page.component';
 
 export const routes: Routes = [
   {
@@ -22,6 +23,11 @@ export const routes: Routes = [
         path: 'Cargar_inventario',
         pathMatch: 'full',
         component:CargaInventarioPageComponent
+      },
+      {
+        path: 'configuracion',
+        pathMatch: 'full',
+        component: EmpresaPageComponent
       }
     ]
   }

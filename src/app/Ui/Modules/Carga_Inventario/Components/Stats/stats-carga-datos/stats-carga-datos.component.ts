@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'stats-carga-datos',
@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './stats-carga-datos.component.css'
 })
 export class StatsCargaDatosComponent {
-
+  @Input() NombreStat: string = ""
+  @Input() ValorStat: number = 0
 }

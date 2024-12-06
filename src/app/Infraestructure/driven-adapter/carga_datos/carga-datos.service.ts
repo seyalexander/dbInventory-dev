@@ -16,11 +16,12 @@ export class CargaDatosService extends CargaDatosGateway{
     return this.httpClient.get(`${this.URL}/descargarPlantilla`, { responseType: 'blob' });
   }
 
-  uploadExcel(file: File): Observable<any> {
+  uploadExcel(file: File, rucEmpresa: string, idCarga: number): Observable<any> {
     const formData = new FormData();
     formData.append('file', file);
-    return this.httpClient.post(`${this.URL}/cargarExcel`, formData);
+    return this.httpClient.post(`${this.URL}/cargarExcel?rucempresa=${rucEmpresa}&id=${idCarga}`, formData);
   }
+
 
   constructor(private httpClient: HttpClient) { super() }
 }
