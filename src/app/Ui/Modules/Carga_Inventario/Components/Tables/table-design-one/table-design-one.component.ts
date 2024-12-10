@@ -44,6 +44,7 @@ export class TableDesignOneComponent {
     this.ObjectInventario
     .getInventarioById(rucempresa,idcarga )
     .subscribe((response: inventariosModel) => {
+      console.log(response)
       this.datosInventario = response
       this.listaProductos = response.detalle
     })

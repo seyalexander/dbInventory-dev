@@ -4,6 +4,8 @@ import { DashboardPageComponent } from './Ui/Modules/Dashboard/Page/dashboard-pa
 import { MenuOpcionesComponent } from './Ui/Modules/Dashboard/Components/menu-opciones/menu-opciones.component';
 import { LoginPageComponent } from './Ui/Modules/login/page/login-page/login-page.component';
 import { EmpresaPageComponent } from './Ui/Modules/configuration/Empresas/page/empresa-page/empresa-page.component';
+import { ConfigurationHomeComponent } from './Ui/Modules/configuration/Configuration_home/configuration-home/configuration-home.component';
+import { UsuarioPageComponent } from './Ui/Modules/configuration/Usuarios/page/usuario-page/usuario-page.component';
 
 export const routes: Routes = [
   {
@@ -26,8 +28,17 @@ export const routes: Routes = [
       },
       {
         path: 'configuracion',
-        pathMatch: 'full',
-        component: EmpresaPageComponent
+        component: ConfigurationHomeComponent,
+        children: [
+          {
+            path: '',
+            component: EmpresaPageComponent,
+          },
+          {
+            path: 'usuario',
+            component:UsuarioPageComponent
+          }
+        ]
       }
     ]
   }

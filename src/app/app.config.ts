@@ -10,6 +10,8 @@ import { inventariosGateway } from './Domain/models/inventarios/gateway/inventar
 import { InventariosService } from './Infraestructure/driven-adapter/inventarios/inventarios.service';
 import { EmpresasGateway } from './Domain/models/empresas/gateway/empresas-gateway';
 import { EmpresasService } from './Infraestructure/driven-adapter/empresas/empresas.service';
+import { UsuariosGateway } from './Domain/models/seguridad/gateway/seguridad-gateway';
+import { SeguridadService } from './Infraestructure/driven-adapter/seguridad/seguridad.service';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -19,6 +21,7 @@ export const appConfig: ApplicationConfig = {
     {provide: CargaDatosGateway, useClass: CargaDatosService},
     {provide: inventariosGateway, useClass: InventariosService},
     {provide: EmpresasGateway, useClass: EmpresasService},
+    {provide: UsuariosGateway, useClass: SeguridadService},
     {provide: LocationStrategy, useClass: HashLocationStrategy },
     provideHttpClient(withInterceptorsFromDi())
   ]

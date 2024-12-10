@@ -15,5 +15,9 @@ export class EmpresasService extends EmpresasGateway{
      return  this.httpCliente.get<EmpresasModel[]>(`${this.URL}/Empresas`)
   }
 
+  override newEmpresa(empresas: EmpresasModel): Observable<object> {
+      return this.httpCliente.post(`${this.URL}/Empresa/Save`, empresas)
+  }
+
   constructor(private httpCliente: HttpClient) { super()}
 }

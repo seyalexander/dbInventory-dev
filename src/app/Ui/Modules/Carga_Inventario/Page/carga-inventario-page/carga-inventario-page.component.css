@@ -1,5 +1,6 @@
 section {
   position: relative;
+  /* background-color: #f5f4f4; */
 }
 
 @media (max-width: 480px) {

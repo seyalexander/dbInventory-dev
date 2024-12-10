@@ -13,7 +13,7 @@ export class detalleCarga {
 	codigoproducto  : string = ""
 	codbarraproducto : string = ""
 	descripcionProducto : string = ""
-	unidadmedida : string = ""
+	unidad : string = ""
 	stockL  : number = 0
 	stockfisico : number = 0
 	estado   : string = ""

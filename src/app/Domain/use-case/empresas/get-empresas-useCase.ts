@@ -10,7 +10,7 @@ import { EmpresasModel } from '../../models/empresas/empresas.model';
 })
 
 
-export class DowloadCargaDatosUseCases {
+export class getEmpresaUseCases {
   constructor( private _EmpresasGateWay: EmpresasGateway) {}
 
   ListarEmpresas() : Observable<Array<EmpresasModel>> {

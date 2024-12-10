@@ -27,6 +27,7 @@ export class ModalCargaDatosComponent {
   mensajeCompleto: string = 'Error al cargar el archivo';
   ultimoIdCargaRegistrado: any
 
+
   private empresasSubscription: Subscription | undefined;
   DatosEmpresas: Array<EmpresasModel> = [];
 
@@ -124,8 +125,10 @@ export class ModalCargaDatosComponent {
     this._postCabecera
     .newCabecera(formValue)
     .subscribe((response: any)=> {
+
       this._postCabecera.getUltimaCabceraRegistrada(rucempresa).subscribe((response: number)=> {
         this.uploadFile(rucempresa,response)
+
       })
     })
   }
