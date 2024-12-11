@@ -46,9 +46,9 @@ export class MenuOpcionesComponent {
         route: ['/','dashboard','Cargar_inventario'],
       },
       {
-        name: 'Consultar',
+        name: 'Reportes',
         icon: 'uil uil-estate',
-        route: ['/','dashboard','Cargar_inventario'],
+        route: ['/','dashboard','reportes'],
       },
       {
         name: 'Ajustes',

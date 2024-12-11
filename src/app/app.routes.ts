@@ -6,6 +6,8 @@ import { LoginPageComponent } from './Ui/Modules/login/page/login-page/login-pag
 import { EmpresaPageComponent } from './Ui/Modules/configuration/Empresas/page/empresa-page/empresa-page.component';
 import { ConfigurationHomeComponent } from './Ui/Modules/configuration/Configuration_home/configuration-home/configuration-home.component';
 import { UsuarioPageComponent } from './Ui/Modules/configuration/Usuarios/page/usuario-page/usuario-page.component';
+import { ReportesPageComponent } from './Ui/Modules/reportes/page/reportes-page/reportes-page.component';
+import { ReporteInventarioComponent } from './Ui/Modules/reportes/reports/reporte-inventario/reporte-inventario.component';
 
 export const routes: Routes = [
   {
@@ -38,6 +40,17 @@ export const routes: Routes = [
             path: 'usuario',
             component:UsuarioPageComponent
           }
+        ]
+      },
+      {
+        path: 'reportes',
+        pathMatch: 'full',
+        component:ReportesPageComponent,
+        children:[
+          {
+            path: '',
+            component: ReporteInventarioComponent,
+          },
         ]
       }
     ]

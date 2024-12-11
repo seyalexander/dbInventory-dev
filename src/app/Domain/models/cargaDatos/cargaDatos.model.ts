@@ -11,7 +11,7 @@ export class detalleCarga {
 	esagrupado: string = ""
 	codigogrupo : string = ""
 	codigoproducto  : string = ""
-	codbarraproducto : string = ""
+	codigobarra : string = ""
 	descripcionProducto : string = ""
 	unidad : string = ""
 	stockL  : number = 0
